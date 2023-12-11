@@ -1,0 +1,1 @@
+let environment=null,host=null;var scriptElement=document.currentScript,scriptSrc=scriptElement.src,scriptDirectory=scriptSrc.substring(0,scriptSrc.lastIndexOf("/"));fetch(scriptDirectory+"/env.php").then((r=>{if(!r.ok)throw new Error("Error al cargar el archivo JSON");return r.json()})).then((r=>{window.host=r.url})).catch((r=>{console.error(r)}));
