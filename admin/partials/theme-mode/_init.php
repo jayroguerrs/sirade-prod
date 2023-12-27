@@ -1,6 +1,4 @@
-<!--begin::Theme mode setup on page load-->
-<script>
-	var defaultThemeMode = "light";
+<!--begin::Theme mode setup on page load--><script>var defaultThemeMode = "light";
 	var themeMode;
 	if ( document.documentElement ) {
 		if ( document.documentElement.hasAttribute("data-theme-mode")) {
@@ -16,6 +14,4 @@
 			themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 		}
 		document.documentElement.setAttribute("data-theme", themeMode);
-	}
-</script>
-<!--end::Theme mode setup on page load-->
+	}</script><!--end::Theme mode setup on page load-->

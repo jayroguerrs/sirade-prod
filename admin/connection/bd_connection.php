@@ -1,4 +1,3 @@
-
 <?php
   
     // Cargar el contenido del archivo JSON
